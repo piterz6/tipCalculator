@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__header">
+        <h1>BILLSPLITTER</h1>
+        <h3>PODZIEL SIĘ RACHUNKAMI ZE ZNAJOMYMI :)</h3>
+      </div>
+      <div class="wrapper__inputs">
+        <label for="amount">Kwota do zapłaty:</label>
+        <input type="number" name="amount" id="amount" />
+        <label for="people__count">Ilość osób:</label>
+        <input type="number" id="people__count" />
+        <label for="tip" />Jaki napiwek:
+        <select id="tip">
+          <option value="0" disabled selected>wybierz napiwek</option>
+          <option value="0.05">5%</option>
+          <option value="0.1">10%</option>
+          <option value="0.15">15%</option>
+          <option value="0.2">20%</option>
+        </select>
+        <button class="count">OBLICZ</button>
+        <p class="error"></p>
+        <p class="cost-info">
+          Powinniście się złożyć po <span class="cost"></span>zł :)
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
