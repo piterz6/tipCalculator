@@ -79,4 +79,5 @@ select {
 .error {
   font-size: 18px;
   color: rgb(199, 63, 29);
+  display: none;
 }
